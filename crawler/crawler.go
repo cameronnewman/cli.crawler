@@ -74,7 +74,6 @@ func (c *Crawler) Run() {
 
 		linkDetails, _ := c.getLinkDetails(normalized)
 		result.Links = append(result.Links, linkDetails)
-		//fmt.Println(normalized)
 		//c.collector.Visit(e.Request.AbsoluteURL(link))
 	})
 	c.collector.Visit(c.SeedRawURL)
